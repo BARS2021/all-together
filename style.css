@@ -1,0 +1,302 @@
+@font-face {
+  font-family: Domine-Regular;
+  src: url("assets/fonts/Domine-Regular.ttf");
+}
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.bg-1 {
+  color: white;
+  background-color: black;
+}
+
+.bg-2 {
+  color: black;
+  background-color: #DFA316;
+}
+
+.bg-3 {
+  color: black;
+  background-color: #BC60AE;
+}
+
+.bg-4 {
+  color: black;
+  background-color: #D7D7D7;
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+     }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Domine-Regular;
+  border: 0px dotted blue;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3vw;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+  border: 0px solid blue;
+  letter-spacing: -.1vw;
+}
+
+h2 {
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 7vw;
+  margin-top: 12px;
+}
+
+.header {
+  padding-top: 48px;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.header-container {
+  top: 0px;
+  height: 100vh;
+  position: absolute;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-container {
+  width: 100%;
+}
+
+.information-container {
+  align-items: center;
+
+}
+
+.column-container {
+  width: 100%;
+  display: flex;
+}
+
+.sticky-column {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  border-right: 1px solid;
+}
+
+.content-column {
+    margin-bottom: 100px;
+}
+
+.photo-reel-container {
+  margin-top: 64px;
+  width: 100%;
+  height: 50%;
+  /* border-bottom: 1px solid white; */
+  display: flex;
+  justify-content: center;
+}
+
+#photo-frame {
+  max-width: 70%;
+  max-height: inherit;
+  object-fit: contain;
+
+}
+
+.all-together {
+  margin: 40px 40px 20px 40px;
+  position: absolute;
+  bottom: 0px;
+  max-height: none;
+}
+
+.column {
+  width: 50%;
+}
+
+.information-body {
+  padding: 4px 16px 4px 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button {
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  padding: 10px 16px 10px 16px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-top: -1px;
+  background-color: transparent;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.sticky-button-container {
+  position: absolute;
+  bottom: 0px;
+  width: inherit;
+}
+
+.collapsible-content {
+  max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapsible-body {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.body-text {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px;
+}
+
+.collapsible-image {
+ max-height: 364px;
+ max-width: 80%;
+ margin: 32px 0px 32px 0px;
+ border: 1px solid black;
+}
+
+.collapsible-end {
+  margin-bottom: 40px;
+}
+
+.content-end {
+  border-bottom: 1px solid;
+}
+
+.display-image-container {
+  border: 1px solid;
+}
+
+.display-image {
+  max-width: 200px;
+}
+
+@media (max-width: 800px) {
+
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 5.5vw;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+    border: 0px solid blue;
+    letter-spacing: -.1vw;
+  }
+
+  h2 {
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    font-size: 12vw;
+    margin-top: 36px;
+  }
+
+  .column-container {
+    width: 100%;
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .sticky-column {
+    position: relative;
+    height: 70vh;
+    border-bottom: 1px solid;
+    border-right: 0px;
+
+  }
+
+  .content-column {
+    margin-bottom: 100px;
+  }
+
+
+  .all-together {
+    margin: 20px;
+    margin-bottom: 48px;
+  }
+
+  .information-container {
+   display: flex;
+  }
+
+  .header-container {
+    height: auto;
+    position: relative;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    width: inherit;
+  }
+
+  .sticky-button-container {
+    position: relative;
+    width: auto;
+    border-bottom: 1px solid;
+  }
+
+
+}
