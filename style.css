@@ -205,6 +205,7 @@ box-sizing: border-box;         /* Opera/IE 8+ */
 .collapsible-image {
  max-height: 364px;
  max-width: 80%;
+ object-fit: contain;
  margin: 32px 0px 32px 0px;
  border: 1px solid black;
 }
