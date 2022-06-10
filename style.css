@@ -113,16 +113,16 @@ h2 {
 }
 
 .photo-reel-container {
-  margin-top: 64px;
+  margin-top: 100px;
   width: 100%;
-  height: 50%;
+  height: 40%;
   /* border-bottom: 1px solid white; */
   display: flex;
   justify-content: center;
 }
 
 #photo-frame {
-  max-width: 70%;
+  max-width: 60%;
   max-height: inherit;
   object-fit: contain;
 
@@ -203,7 +203,7 @@ box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .collapsible-image {
- max-height: 364px;
+
  max-width: 80%;
  object-fit: contain;
  margin: 32px 0px 32px 0px;
