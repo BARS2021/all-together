@@ -233,8 +233,8 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     font-weight: normal;
     font-size: 32px;
     padding-top: 64px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 64px;
     border: 0px solid blue;
     letter-spacing: -.1vw;
@@ -246,10 +246,6 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     text-align: center;
     font-size: 64px;
     margin-top: 36px;
-  }
-
-  .header {
-    font-size: 36px;
   }
 
   .column-container {
